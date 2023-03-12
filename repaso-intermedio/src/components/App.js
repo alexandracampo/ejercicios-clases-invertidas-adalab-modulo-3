@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import { useState, useEffect } from 'react';
-import data from '../services/data.json'
+import data from '../data/data.json'
 
 function App() {
 

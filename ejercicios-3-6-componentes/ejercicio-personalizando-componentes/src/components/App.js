@@ -7,17 +7,14 @@ function App() {
     <div>
       <header className="header">
         <h1>HEADER</h1>
-
         <nav>
           <ul>
-            <Link class="menu-item" />
+            <Link title="Blog" url="https://adalab.es/blog/" openInNewTab={true} />
+            <Link title="Contacto" url="https://adalab.es/contacto/" openInNewTab={false} />
+
           </ul>
         </nav>
       </header>
-      <main className="main">
-        MAIN
-      </main>
-      <footer className="footer">FOOTER</footer>
     </div>
   );
 }

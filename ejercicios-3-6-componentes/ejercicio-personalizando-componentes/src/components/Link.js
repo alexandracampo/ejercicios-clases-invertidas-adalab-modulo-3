@@ -1,17 +1,20 @@
+// Fichero src/components/Link.js
 function Link(props) {
+    const { title, url, openInNewTab } = props;
+    console.log(url)
+
     return (
-        <div>
-            <li className="menu-item">
-                <a title="Blog" className="menu-link" href="https://adalab.es/blog/">
-                    Blog
-                </a>
-            </li>
-            <li className="menu-item">
-                <a title="Contacto" className="menu-link" href="https://adalab.es/contacto/">
-                    Contacto
-                </a>
-            </li>
-        </div>
+        <li className="menu-item">
+            <a
+                title={title}
+                className="menu-link"
+                href={url}
+                target={openInNewTab ? "_blank" : "_self"}
+                rel={openInNewTab ? "noopener noreferrer" : ""}
+            >
+                {title}
+            </a>
+        </li>
     );
 }
 
